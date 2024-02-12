@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Protest+Revolution&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background-image: url("git.gif");
+    background-size: cover; */
+    background-color: #f8f9fa;
+}
+
+.mainContainer{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #f8f9fa;
+
+}
+
+.registration{
+    width: 50%;
+    height: 80%;
+    /* border: 5px white solid; */
+    margin-top: 39px;
+    margin-left: 374px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 40px;
+}
+ .heading{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-left: 2PX;
+    padding-top: 4PX;
+    margin-top: 10px;
+  margin-bottom: 40px;
+    background-color: transparent;
+    /* font-family: 'Protest Revolution', sans-serif;
+    font-family: 'Lato', sans-serif; */
+
+    font-family: 'Playfair Display', serif;
+
+    color: #007bff;
+    /* background-color: blue; */
+    font-size: 15px;
+
+}
+
+label{
+    display: block;
+    color: #555;
+    margin-top: 4px;
+    margin-left: 171px;
+}
+button{
+    width: 30%;
+    position: relative;
+    left: 280px;
+    bottom: 5px;
+    font-family: 'Lato', sans-serif; 
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(21, 135, 21, 0.668);
+}
+
+input,
+select,
+textarea{
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px #ced4da solid;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    width: 59%;
+    align-items: center;
+    padding: 5px;
+    margin-left: 171px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+
+
+    
+
+.afterregistration{
+  
+        width: 57%;
+        height: 77%;
+        /* border: 5px white solid; */
+        margin-top: 39px;
+        margin-left: 97px;
+    
+}
+
+.outputalignment{
+    width: 34%;
+    height: 60%;
+    border: 2px #ced4da solid;
+    color: black;
+    position: absolute;
+    left: 65%;
+    top: 32%;
+
+    overflow: scroll;
+    font-size: 30px;
+
+}
+
+
+    </style>
+    <!-- <script src="signup.js" defer></script> -->
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="registration">
+            <div class="heading">
+                <h1>Student Registration Form</h1>
+            </div>
+            <form action="thanks.html">
+                <label for="fullName">Student Full Name:</label>
+                <input autofocus id="fullName" type="text" value="" placeholder="Enter Full Name">
+        
+                <label>Branch:</label>
+                <select id="branch">
+                   <option value="CSE">CSE</option>
+                   <option value="CSE(AI & ML)">CSE(AI & ML)</option>
+                </select>
+
+                <label>Roll no and section</label>
+                <input id="Rollsec" type="text" value="" placeholder="like:- D-40">
+
+                <label>Student Email:</label>
+                <input id="email" type="email" value="" placeholder="Enter Your Email Address">
+
+                <label>Password:</label>
+                <input id="password" autocomplete="" type="password" value="">
+
+                <label>Gender:</label>
+                <select id="gender"> 
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <label>Date of Birth:</label>
+                <input id="dob" type="date" name="date">
+
+                <label>Current Semester:</label>
+                <select id="semester">
+                    <option value="1st">1st</option>
+                    <option value="2nd">2st</option>
+                    <option value="3rd">3st</option>
+                    <option value="4th">4st</option>
+                    <option value="5th">5st</option>
+                    <option value="6th">6st</option>
+                    <option value="7th">7st</option>
+                    <option value="8th">8st</option>
+                </select>
+
+                <label>Address:</label>
+                <textarea id="address" name="address"></textarea>
+
+                <button  id="registrationForm">Submit</button>
+
+                
+            </form>
+
+
+      
+        </div>
+    </div>
+</body>
+</html>
